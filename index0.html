@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rutas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e7f0ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #0a4fad;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            width: 90%;
+            max-width: 900px;
+            padding: 40px 0;
+        }
+
+        .btn-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+        }
+
+        .btn-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .btn-card a {
+            display: block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #0a4fad;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .btn-card a:hover {
+            background-color: #083c82;
+        }
+    </style>
+</head>
+<body>
+    <header>Rutas</header>
+
+    <div class="container">
+        <div class="btn-card">
+            <img src="AdientPuebla.png" alt="Adient Puebla">
+            <a href="AdientP.html">Adient Puebla</a>
+        </div>
+
+        <div class="btn-card">
+            <img src="AdientTlaxcala.png" alt="Adient Tlaxcala">
+            <a href="AdientT.html">Adient Tlaxcala</a>
+        </div>
+
+        <div class="btn-card">
+            <img src="Ericsson.png" alt="Ericsson">
+            <a href="Ericsson.html">Ericsson</a>
+        </div>
+
+        <div class="btn-card">
+            <img src="Autotek.png" alt="Autotek">
+            <a href="Autotek.html">Autotek</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
